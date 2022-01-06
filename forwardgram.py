@@ -51,6 +51,7 @@ def start(config):
     # Use logging and print messages on your console.     
     logging.info(f"Listening on {len(input_channels_entities)} channels. Forwarding messages to {len(output_channel_entities)} channels.")
 
+
     @client.on(events.NewMessage(chats=input_channels_entities))
     async def handler(event):
         for output_channel in output_channel_entities:
