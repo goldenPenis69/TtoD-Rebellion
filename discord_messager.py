@@ -37,19 +37,7 @@ async def on_ready():
     print('Awaiting Telegram Message')
 
     # My channels are for RTX card drops and PS5
-    channel_1 = discord_client.get_channel(config["discord_1_channel"])
-    channel_2 = discord_client.get_channel(config["discord_2_channel"])
-    channel_3 = discord_client.get_channel(config["discord_3_channel"])
-    channel_4 = discord_client.get_channel(config["discord_4_channel"])
 
-    if 'Mario' in message:
-        await channel_1.send(message)
-    elif 'Zelda' in message:
-        await channel_2.send(message)
-    elif 'Minecraft' in message:
-        await channel_3.send(message)
-    elif 'Valhiem' in message:
-        await channel_4.send(message)
 
     quit()
 
